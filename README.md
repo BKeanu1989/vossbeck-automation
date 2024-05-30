@@ -12,6 +12,12 @@ erstelle in Trello Arbeitsbereich Vossbeck Management, Board Daily, Liste “Tim
 
 zum testen, einen anderen shared ordner benutzen.
 
+---
+how to get board ids
+https://community.atlassian.com/t5/Trello-questions/Trello-Rest-API-to-get-all-Trello-cards-which-user-is-able-to/qaq-p/675426
+
+GET https://api.trello.com/1/members/me/boards?key=KEY&token=TOKEN
+
 
 ---
 ## Trello API
