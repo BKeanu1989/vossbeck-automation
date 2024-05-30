@@ -68,6 +68,31 @@ https://cloud.google.com/sdk/docs/install
 ### Trello
 https://developer.atlassian.com/cloud/trello/guides/rest-api/webhooks/
 
+what is modelId?
+
+
+https://community.atlassian.com/t5/Trello-questions/What-is-a-model-idmodel-when-creating-a-webhook/qaq-p/1571434
+```txt question
+Hi all,
+
+I'm creating cards via the Trello API and I'm trying to create a Webhook on each card that calls my apps endpoint when the card is moved to a specific list.
+
+When I create my webhook as per the documentation below, it returns 'invalid value for idModel'. My query sets the 'idModel' to the card ID I've just created.
+
+https://developer.atlassian.com/cloud/trello/rest/api-group-webhooks/#api-webhooks-post
+
+
+Is the card id the model? i.e. depending on the context the model can be a card, list, board etc. whatever you want your webhook to relate to.
+
+I can't find anywhere in the documentation that describes what a model is or can be.
+
+```
+```txt answer
+@Ryan you have understood it correctly. Depending on what webhook you are setting up, the idModel can be a card id, board id, list id or member id.
+
+For card movement, you should set the idModel to list id. That would be how I look at card movement. If you set to card id, there will be lots of webhooks for the system to manage.
+```
+
 https://developer.atlassian.com/cloud/trello/guides/rest-api/action-types/
 
 
